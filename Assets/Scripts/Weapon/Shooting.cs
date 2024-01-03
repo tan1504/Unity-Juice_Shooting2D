@@ -13,7 +13,6 @@ public class Shooting : MonoBehaviour
 
     void Update()
     {
-        bullet.transform.Rotate(new Vector3(0, 0, 0.5f));
         ProcessInputs();
     }
 

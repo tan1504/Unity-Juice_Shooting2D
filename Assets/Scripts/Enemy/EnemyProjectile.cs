@@ -7,6 +7,7 @@ public class EnemyProjectile : MonoBehaviour
     public Vector3 rotateChange;
     Vector3 targetPosition;
     public float speed;
+    public float damage;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,14 @@ public class EnemyProjectile : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 
         if (transform.position == targetPosition)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
         {
             Destroy(gameObject);
         }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2237591824246002363}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,4 +161,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2e9b27b97a3eb144973a96d3bebdbc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
   rotateChange: {x: 0, y: 0, z: 0.3}

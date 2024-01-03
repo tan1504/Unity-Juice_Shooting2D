@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -1183891741612176601}
   m_Layer: 0
   m_Name: EnemyBullet
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,3 +163,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateChange: {x: 0, y: 0, z: 0.3}
   speed: 4
+  damage: 1

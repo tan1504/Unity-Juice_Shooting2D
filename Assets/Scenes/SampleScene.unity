@@ -481,7 +481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7538548851496058652, guid: 094b0996dfe72054988321bea8e5551e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1004,7 +1004,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7538548851496058652, guid: 094b0996dfe72054988321bea8e5551e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1338,7 +1338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7538548851496058652, guid: 094b0996dfe72054988321bea8e5551e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1745,7 +1745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7538548851496058652, guid: 094b0996dfe72054988321bea8e5551e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1764,6 +1764,10 @@ PrefabInstance:
       propertyPath: health
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 149179895514743824, guid: d47d7f0777617834f8984703c87616fd, type: 3}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 8521734450028100063, guid: 5793f9834aa44a1459cf3dcc4c4448b7, type: 3}
     - target: {fileID: 149179895514743824, guid: d47d7f0777617834f8984703c87616fd, type: 3}
       propertyPath: healthText
       value: 
@@ -1876,10 +1880,6 @@ PrefabInstance:
     - target: {fileID: 929135243035113835, guid: 094b0996dfe72054988321bea8e5551e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2219369109500403103, guid: 094b0996dfe72054988321bea8e5551e, type: 3}
-      propertyPath: timeBtwSpawn
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7538548851496058652, guid: 094b0996dfe72054988321bea8e5551e, type: 3}
       propertyPath: m_Name

@@ -5,8 +5,8 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float damage;
-
     public Vector3 rotateChange;
+    public GameObject explosion;
 
     void Update()
     {
@@ -17,6 +17,8 @@ public class Bullet : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
+            GameObject particle = Instantiate(explosion, this.transform.position, Quaternion.identity);
+            particle.GetComponent<ParticleSystem>().Play();
             Destroy(this.gameObject);
         }
     }

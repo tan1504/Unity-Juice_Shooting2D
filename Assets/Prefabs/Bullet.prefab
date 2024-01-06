@@ -163,3 +163,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   rotateChange: {x: 0, y: 0, z: 0.3}
+  explosion: {fileID: 1598814516271114915, guid: b5d50f5913e003e4bb80594d1f0417ab, type: 3}

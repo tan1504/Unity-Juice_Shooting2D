@@ -210,3 +210,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+  explosion: {fileID: 1399342237134800073, guid: 027952a54a8464e48b7d400faf020133, type: 3}

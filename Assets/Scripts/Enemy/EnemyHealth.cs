@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     public float health;
+    public GameObject explosion;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,6 +16,8 @@ public class EnemyHealth : MonoBehaviour
 
                 if (health <= 0)
                 {
+                    GameObject particle = Instantiate(explosion, this.transform.position, Quaternion.identity);
+                    particle.GetComponent<ParticleSystem>().Play();
                     Destroy(this.gameObject);
                 }
                 break;

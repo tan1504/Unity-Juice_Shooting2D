@@ -8,6 +8,7 @@ public class EnemyProjectile : MonoBehaviour
     Vector3 targetPosition;
     public float speed;
     public float damage;
+    public GameObject explosion;
 
     // Start is called before the first frame update
     void Start()
@@ -23,14 +24,8 @@ public class EnemyProjectile : MonoBehaviour
 
         if (transform.position == targetPosition)
         {
-            Destroy(gameObject);
-        }
-    }
-
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
+            GameObject particle = Instantiate(explosion, this.transform.position, Quaternion.identity);
+            particle.GetComponent<ParticleSystem>().Play();
             Destroy(gameObject);
         }
     }

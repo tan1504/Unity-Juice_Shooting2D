@@ -52,9 +52,7 @@ MonoBehaviour:
   - {fileID: 9051576034028671323, guid: 8a8bfabbdce86044091dd722fb4223ad, type: 3}
   - {fileID: 5858214185082669482, guid: 7480723f1641d6743887d07e05769218, type: 3}
   spawnPos: {fileID: 3189747588088818760}
-  timeBtwSpawn: 2
-  scalingSpeed: 0.1
-  finalScale: 1
+  timeBtwSpawn: 3
 --- !u!1 &7538548851496058652
 GameObject:
   m_ObjectHideFlags: 0

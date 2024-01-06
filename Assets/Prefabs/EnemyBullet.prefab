@@ -164,3 +164,4 @@ MonoBehaviour:
   rotateChange: {x: 0, y: 0, z: 0.3}
   speed: 4
   damage: 1
+  explosion: {fileID: 8521734450028100063, guid: 5793f9834aa44a1459cf3dcc4c4448b7, type: 3}

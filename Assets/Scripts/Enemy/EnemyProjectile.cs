@@ -27,6 +27,7 @@ public class EnemyProjectile : MonoBehaviour
             GameObject particle = Instantiate(explosion, this.transform.position, Quaternion.identity);
             particle.GetComponent<ParticleSystem>().Play();
             Destroy(gameObject);
+            Destroy(particle, 3.0f);
         }
     }
 }

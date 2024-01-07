@@ -6,6 +6,7 @@ public class EnemyHealth : MonoBehaviour
 {
     public float health;
     public GameObject explosion;
+    public GameObject playerHealth;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,6 +20,11 @@ public class EnemyHealth : MonoBehaviour
                     GameObject particle = Instantiate(explosion, this.transform.position, Quaternion.identity);
                     particle.GetComponent<ParticleSystem>().Play();
                     Destroy(this.gameObject);
+                    Destroy(particle, 3.0f);
+
+                    float scoreRand = Random.Range(1, 6);
+                    playerHealth = GameObject.FindGameObjectWithTag("Player");
+                    playerHealth.GetComponent<PlayerHealth>().score += scoreRand;
                 }
                 break;
         }

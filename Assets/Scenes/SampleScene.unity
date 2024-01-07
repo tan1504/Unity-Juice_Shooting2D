@@ -1761,13 +1761,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 149179895514743824, guid: d47d7f0777617834f8984703c87616fd, type: 3}
-      propertyPath: health
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 149179895514743824, guid: d47d7f0777617834f8984703c87616fd, type: 3}
-      propertyPath: explosion
+      propertyPath: scoreText
       value: 
-      objectReference: {fileID: 8521734450028100063, guid: 5793f9834aa44a1459cf3dcc4c4448b7, type: 3}
+      objectReference: {fileID: 1595608119}
     - target: {fileID: 149179895514743824, guid: d47d7f0777617834f8984703c87616fd, type: 3}
       propertyPath: healthText
       value: 
@@ -1820,10 +1816,6 @@ PrefabInstance:
       propertyPath: sceneCamera
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 6184272581072813921, guid: d47d7f0777617834f8984703c87616fd, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7293850714952640684, guid: d47d7f0777617834f8984703c87616fd, type: 3}
       propertyPath: m_Name
       value: Player

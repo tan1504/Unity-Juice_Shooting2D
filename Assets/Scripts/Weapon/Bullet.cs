@@ -20,6 +20,7 @@ public class Bullet : MonoBehaviour
             GameObject particle = Instantiate(explosion, this.transform.position, Quaternion.identity);
             particle.GetComponent<ParticleSystem>().Play();
             Destroy(this.gameObject);
+            Destroy(particle, 3.0f);
         }
     }
 }

@@ -7,7 +7,14 @@ public class PlayerHealth : MonoBehaviour
 {
     public float health;
     [SerializeField] private Text healthText;
+    [SerializeField] private Text scoreText;
     public GameObject explosion;
+    public float score;
+
+    private void Update()
+    {
+        scoreText.text = score + "";
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,6 +28,7 @@ public class PlayerHealth : MonoBehaviour
                 particle.GetComponent<ParticleSystem>().Play();
 
                 Destroy(collision.gameObject);
+                Destroy(particle, 3.0f);
 
                 if (health <= 0)
                 {

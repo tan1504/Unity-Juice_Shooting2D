@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     public float health;
+    public float exp;
     public GameObject explosion;
     public GameObject playerHealth;
 
@@ -22,9 +23,13 @@ public class EnemyHealth : MonoBehaviour
                     Destroy(this.gameObject);
                     Destroy(particle, 3.0f);
 
-                    float scoreRand = Random.Range(1, 6);
                     playerHealth = GameObject.FindGameObjectWithTag("Player");
-                    playerHealth.GetComponent<PlayerHealth>().score += scoreRand;
+                    playerHealth.GetComponent<PlayerHealth>().score += exp;
+                    float scoreBonus = Random.Range(1, 20);
+                    if (scoreBonus >= 1 && scoreBonus <= 6)
+                    {
+                        playerHealth.GetComponent<PlayerHealth>().score += scoreBonus;
+                    }
                 }
                 break;
         }

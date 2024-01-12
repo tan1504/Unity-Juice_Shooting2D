@@ -10,6 +10,7 @@ public class Shooting : MonoBehaviour
     public float bulletTimeLife;
     private float timer;
     public float timeBetweenFire;
+    [SerializeField] private AudioClip clip;
 
     void Update()
     {
@@ -31,7 +32,7 @@ public class Shooting : MonoBehaviour
 
         GameObject instanceBullet = Instantiate(bullet, firePoint.position, Quaternion.identity);
         instanceBullet.GetComponent<Rigidbody2D>().AddForce((transform.right * (-1)) * fireForce, ForceMode2D.Impulse);
-
+        SoundManager.Instance.PLaySound(clip);
         Destroy(instanceBullet, bulletTimeLife);
     }
 }

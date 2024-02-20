@@ -213,3 +213,4 @@ MonoBehaviour:
   exp: 3
   explosion: {fileID: 1399342237134800073, guid: 027952a54a8464e48b7d400faf020133, type: 3}
   playerHealth: {fileID: 7293850714952640684, guid: d47d7f0777617834f8984703c87616fd, type: 3}
+  clip: {fileID: 8300000, guid: 01925bc8e19a71446a8b65ca4e1d4ced, type: 3}

@@ -8,6 +8,7 @@ public class EnemyHealth : MonoBehaviour
     public float exp;
     public GameObject explosion;
     public GameObject playerHealth;
+    [SerializeField] private AudioClip clip;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -22,6 +23,7 @@ public class EnemyHealth : MonoBehaviour
                     particle.GetComponent<ParticleSystem>().Play();
                     Destroy(this.gameObject);
                     Destroy(particle, 3.0f);
+                    SoundManager.Instance.PLaySound(clip);
 
                     playerHealth = GameObject.FindGameObjectWithTag("Player");
                     playerHealth.GetComponent<PlayerHealth>().score += exp;

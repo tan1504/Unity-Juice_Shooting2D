@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private Text scoreText;
     public GameObject explosion;
     public float score;
+    public bool isGameOver = false;
 
     private void Update()
     {
@@ -32,7 +33,8 @@ public class PlayerHealth : MonoBehaviour
 
                 if (health <= 0)
                 {
-                    Destroy(this.gameObject);
+                    gameObject.SetActive(false);
+                    isGameOver = true;
                 }
                 break;
         }
@@ -49,6 +51,7 @@ public class PlayerHealth : MonoBehaviour
                 if (health <= 0)
                 {
                     gameObject.SetActive(false);
+                    isGameOver = true;
                 }
                 break;
         }

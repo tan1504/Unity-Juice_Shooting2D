@@ -7,21 +7,23 @@ public class SpecialBullet : MonoBehaviour
 {
     public GameObject prefabBullet;
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (collision.gameObject.tag == "Bullet")
         {
-            for (int i = 0; i < 360; i=i+40)
+            List<int> list = new List<int>();
+            for (int i = 0; i < 15; i++)
             {
-                Instantiate(prefabBullet, transform.position, Quaternion.Euler(0, 0, i));
+                int index = Random.Range(0, 361);
+                list.Add(index);
             }
+
+            foreach (var item in list)
+            {
+                Instantiate(prefabBullet, transform.position, Quaternion.Euler(0, 0, item));
+            }
+
+            Destroy(gameObject);
         }
     }
 }

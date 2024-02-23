@@ -120,9 +120,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.001915276, y: 0.0032740235}
+  m_Offset: {x: 0.0014298472, y: -0.026540717}
   serializedVersion: 2
-  m_Radius: 0.2328158
+  m_Radius: 0.3363871
 --- !u!50 &6741938292216542755
 Rigidbody2D:
   serializedVersion: 4
@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2e9b27b97a3eb144973a96d3bebdbc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 5
   rotateChange: {x: 0, y: 0, z: 0}
   explosion: {fileID: 1598814516271114915, guid: b5d50f5913e003e4bb80594d1f0417ab, type: 3}
 --- !u!114 &-6454454765020535808

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7969138520972031790}
   - component: {fileID: 6646933051433491843}
   m_Layer: 0
-  m_Name: Crystal
+  m_Name: MonStar
   m_TagString: Crystal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3981963035380058641}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.005235964, w: 0.99998635}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 8
-  m_Sprite: {fileID: 21300000, guid: d6eeea9c4a914c04393d1a4b46dd9066, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 307eaad01b15e764c9c0d42fd5ffe728, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -119,18 +119,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.013022542, y: 0.006511152}
+  m_Offset: {x: -0.0048490167, y: 0.032594204}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.4628571, y: 1.4628571}
+    oldSize: {x: 3.2, y: 3.2}
     newSize: {x: 3.2, y: 3.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.564317, y: 1.2935671}
+  m_Size: {x: 1.1649226, y: 0.60529876}
   m_EdgeRadius: 0
 --- !u!95 &7969138520972031790
 Animator:
@@ -142,7 +142,7 @@ Animator:
   m_GameObject: {fileID: 3981963035380058641}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1b37ed17a69452347bceb3e79f2d2fe9, type: 2}
+  m_Controller: {fileID: 9100000, guid: d2782b73f1432cd4e837183f16fe68c6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1

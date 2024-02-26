@@ -4,26 +4,26 @@ using UnityEngine;
 
 public class SpawnerCrystals : MonoBehaviour
 {
-    public GameObject crystalPrefab;
-    private GameObject[] crystals;
+    public GameObject monstarPrefab;
+    private GameObject[] monstars;
     [SerializeField] private int count = 0;
-    [SerializeField] private int maxCrystals = 3;
+    [SerializeField] private int maxMonstar = 5;
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnerCrystal", 2f, 5f);
+        InvokeRepeating("SpawnerMonstar", 2f, 5f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        crystals = GameObject.FindGameObjectsWithTag("Crystal");
-        count = crystals.Length;
+        monstars = GameObject.FindGameObjectsWithTag("Monstar");
+        count = monstars.Length;
     }
 
-    void SpawnerCrystal()
+    void SpawnerMonstar()
     {
-        if (count >= maxCrystals)
+        if (count >= maxMonstar)
         {
             // Stop Instantiate
             return;
@@ -31,7 +31,7 @@ public class SpawnerCrystals : MonoBehaviour
         else
         {
             Vector3 spawnPos = new Vector3(Random.Range(-15, 16), Random.Range(-15, 16), 0);
-            Instantiate(crystalPrefab, spawnPos, crystalPrefab.transform.rotation);
+            Instantiate(monstarPrefab, spawnPos, monstarPrefab.transform.rotation);
             count++;
         }        
     }

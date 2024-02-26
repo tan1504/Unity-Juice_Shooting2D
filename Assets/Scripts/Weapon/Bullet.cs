@@ -6,7 +6,8 @@ public class Bullet : MonoBehaviour
 {
     public float damage;
     public Vector3 rotateChange;
-    public GameObject explosion;
+    public GameObject explosionEnemy;
+    public GameObject explosionMonStar;
 
     void Update()
     {
@@ -17,7 +18,15 @@ public class Bullet : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            GameObject particle = Instantiate(explosion, this.transform.position, Quaternion.identity);
+            GameObject particle = Instantiate(explosionEnemy, this.transform.position, Quaternion.identity);
+            particle.GetComponent<ParticleSystem>().Play();
+            Destroy(this.gameObject);
+            Destroy(particle, 3.0f);
+        }
+
+        if (collision.CompareTag("Monstar"))
+        {
+            GameObject particle = Instantiate(explosionMonStar, this.transform.position, Quaternion.identity);
             particle.GetComponent<ParticleSystem>().Play();
             Destroy(this.gameObject);
             Destroy(particle, 3.0f);

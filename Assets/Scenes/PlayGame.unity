@@ -123,67 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &2685823
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3981963035380058641, guid: 0c71b15d1dbfcbf4e8e249a586f02408, type: 3}
-      propertyPath: m_Name
-      value: MonStar
-      objectReference: {fileID: 0}
-    - target: {fileID: 5117936251161326497, guid: 0c71b15d1dbfcbf4e8e249a586f02408, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5117936251161326497, guid: 0c71b15d1dbfcbf4e8e249a586f02408, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5117936251161326497, guid: 0c71b15d1dbfcbf4e8e249a586f02408, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5117936251161326497, guid: 0c71b15d1dbfcbf4e8e249a586f02408, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5117936251161326497, guid: 0c71b15d1dbfcbf4e8e249a586f02408, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5117936251161326497, guid: 0c71b15d1dbfcbf4e8e249a586f02408, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5117936251161326497, guid: 0c71b15d1dbfcbf4e8e249a586f02408, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5117936251161326497, guid: 0c71b15d1dbfcbf4e8e249a586f02408, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5117936251161326497, guid: 0c71b15d1dbfcbf4e8e249a586f02408, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5117936251161326497, guid: 0c71b15d1dbfcbf4e8e249a586f02408, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7969138520972031790, guid: 0c71b15d1dbfcbf4e8e249a586f02408, type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0c71b15d1dbfcbf4e8e249a586f02408, type: 3}
 --- !u!1 &53081649
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,9 +227,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44c763e1e0b828a4fa4af9f3b54da8cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crystalPrefab: {fileID: 3981963035380058641, guid: 0c71b15d1dbfcbf4e8e249a586f02408, type: 3}
+  monstarPrefab: {fileID: 3981963035380058641, guid: 0c71b15d1dbfcbf4e8e249a586f02408, type: 3}
   count: 0
-  maxCrystals: 3
+  maxMonstar: 5
 --- !u!4 &73485532
 Transform:
   m_ObjectHideFlags: 0
@@ -1930,7 +1869,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b17f139894663fa4da61e44acccb175a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.09
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2626,4 +2565,3 @@ SceneRoots:
   - {fileID: 73485532}
   - {fileID: 458299135}
   - {fileID: 1578737542}
-  - {fileID: 2685823}

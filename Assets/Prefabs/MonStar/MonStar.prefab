@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6646933051433491843}
   m_Layer: 0
   m_Name: MonStar
-  m_TagString: Crystal
+  m_TagString: MonStar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -7,7 +7,7 @@ TagManager:
   - Enemy
   - Bullet
   - Projectile
-  - Crystal
+  - Monstar
   layers:
   - Default
   - TransparentFX

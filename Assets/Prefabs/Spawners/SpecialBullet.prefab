@@ -164,7 +164,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   rotateChange: {x: 0, y: 0, z: 0}
-  explosion: {fileID: 1598814516271114915, guid: b5d50f5913e003e4bb80594d1f0417ab, type: 3}
+  explosionEnemy: {fileID: 1399342237134800073, guid: 027952a54a8464e48b7d400faf020133, type: 3}
+  explosionMonStar: {fileID: 2057488419520823939, guid: 316fbc835f81d5d478f63f41b016f381, type: 3}
 --- !u!114 &-6454454765020535808
 MonoBehaviour:
   m_ObjectHideFlags: 0
